@@ -14,6 +14,7 @@ fs.watch(filename, () => {
 
     ls.stdout.on('data', (chunk) => {
         // console.log('chunk', chunk);
+        // chunk is a Buffer
         output += chunk;
     });
 
